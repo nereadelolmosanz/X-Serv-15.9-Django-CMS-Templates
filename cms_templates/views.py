@@ -74,6 +74,6 @@ def annotated(request, resource):
             return HttpResponse(template.render(Context({'login': log, 'page': pageSearched.page})))
         except Pages.DoesNotExist:
             response = '<h1>' + resource + ' not found.</h1>'
-            return HttpResponse(template.render(Context(Context({'login': log, 'error': response})))
+            return HttpResponse(template.render(Context({'login': log, 'error': response})))
     else:
         return HttpResponse('<h1>Invalid method.</h1>')
