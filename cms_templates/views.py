@@ -59,7 +59,6 @@ def page_searching(request, resource):
         else:
             response += "<h3>Necesitas registrate para crear paginas</h3>"
             return HttpResponse(response)
-
     else:
         response += '<h1>Invalid method.</h1>'
         return HttpResponse(response)
